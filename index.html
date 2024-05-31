@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Age</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="big">
+        <div class="parent">
+            <div class="calc">
+                <div class="parent-day box">
+            <span>Day</span>
+            <input class="day" type="number" id="day" min="1" max="31" oninput="calculateAndPrintDate()">
+        </div>
+        <div class="parent-month box">
+            <span>Month</span>
+            <input class="month" type="number" id="month" min="1" max="12" oninput="calculateAndPrintDate()">        </div>
+        <div class="parent-year box">
+            <span>Year</span>
+            <input type="number" class="year" id="year" min="1900" max="2100" oninput="calculateAndPrintDate()">
+        </div>
+        </div>
+        <div class="result">
+            <h3><span class="years-res" id="age">0</span> Years</h3>
+            <h3><span class="month-res" id="monthDiff">0</span> Month</h3>
+            <h3><span class="day-res" id="dayDiff">0</span> Day</h3>
+        </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
