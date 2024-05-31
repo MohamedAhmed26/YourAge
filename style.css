@@ -70,11 +70,17 @@ body {
     .parent {
     border-bottom-right-radius: 10px;
     }
+    body > div {
+        margin-top: 50px !important;
+    }
     .calc {
         flex-direction: column;
     }
     .calc .box {
         margin-bottom: 10px;
+    }
+    input {
+        width: 90% !important;
     }
     .result h3 {
         font-size: 20px;
